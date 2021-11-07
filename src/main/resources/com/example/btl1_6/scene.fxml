@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl1_6.Controller">
+   <children>
+      <BorderPane layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <Label alignment="BASELINE_CENTER" prefHeight="0.0" prefWidth="598.0" style="-fx-background-color: #728e5d;" textFill="#faebe0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <TabPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="250.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab fx:id="tabsearch" text="Translate">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: FEFFDE;">
+                           <children>
+                              <TextField fx:id="word_search" layoutX="415.0" layoutY="107.0" prefHeight="42.0" prefWidth="114.0" />
+                              <TextField fx:id="find" layoutX="261.0" layoutY="107.0" onAction="#find" prefHeight="43.0" prefWidth="114.0" />
+                              <ImageView fx:id="translate" fitHeight="50.0" fitWidth="39.0" layoutX="166.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/translate.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#728e5d" layoutX="287.0" layoutY="95.0" stroke="#196920" strokeType="OUTSIDE" strokeWidth="0.0" text="English ">
+                                 <font>
+                                    <Font name="Wingdings" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="363.0" layoutY="173.0" mnemonicParsing="false" onAction="#find" style="-fx-background-color: FFFFC7;" text="Search" textFill="#728e5d" />
+                              <Text fill="#728e5d" layoutX="427.0" layoutY="94.0" stroke="#196920" strokeType="OUTSIDE" strokeWidth="0.0" text="Vietnamese">
+                                 <font>
+                                    <Font name="Webdings" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#728e5d" layoutX="50.0" layoutY="133.0" stroke="#196920" strokeType="OUTSIDE" strokeWidth="0.0" text="CAA">
+                                 <font>
+                                    <Font name="Georgia Bold" size="48.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#728e5d" layoutX="50.0" layoutY="167.0" stroke="#196920" strokeType="OUTSIDE" strokeWidth="0.0" text="translate">
+                                 <font>
+                                    <Font name="Webdings" size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Add ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: FEFFDE;">
+                           <children>
+                              <TextField fx:id="eng_add" layoutX="267.0" layoutY="104.0" prefHeight="40.0" prefWidth="135.0" />
+                              <TextField fx:id="viet_add" layoutX="429.0" layoutY="104.0" prefHeight="41.0" prefWidth="142.0" />
+                              <Text fill="#728e5d" layoutX="300.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English">
+                                 <font>
+                                    <Font name="Wingdings" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#728e5d" layoutX="454.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vietnamese">
+                                 <font>
+                                    <Font name="Webdings" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="387.0" layoutY="164.0" mnemonicParsing="false" onAction="#addword" prefHeight="34.0" prefWidth="62.0" style="-fx-background-color: FFFFC7;" text="Save" textFill="#728e5d" />
+                              <Text fill="#728e5d" layoutX="58.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAA">
+                                 <font>
+                                    <Font name="Georgia Bold" size="48.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#728e5d" layoutX="58.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dictionary">
+                                 <font>
+                                    <Font name="Webdings" size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Delete ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: FEFFDE;">
+                           <children>
+                              <TextField fx:id="text_delete" layoutX="344.0" layoutY="88.0" prefHeight="48.0" prefWidth="209.0" />
+                              <Text fill="#728e5d" layoutX="73.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dictionary" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Webdings" size="28.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="419.0" layoutY="147.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: FFFFC7;" text="Delete" textFill="#728e5d" />
+                              <Text fill="#728e5d" layoutX="73.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAA" wrappingWidth="135.91558837890625">
+                                 <font>
+                                    <Font name="Georgia Bold" size="48.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Edit">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: FEFFDE;">
+                           <children>
+                              <TextField fx:id="wrong_word" layoutX="263.0" layoutY="120.0" prefHeight="45.0" prefWidth="126.0" />
+                              <TextField fx:id="correct_word" layoutX="424.0" layoutY="120.0" prefHeight="44.0" prefWidth="130.0" />
+                              <Text fill="#728e5d" layoutX="305.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Word">
+                                 <font>
+                                    <Font name="Webdings" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#728e5d" layoutX="437.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explain Word">
+                                 <font>
+                                    <Font name="Webdings" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="376.0" layoutY="179.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: FFFFC7;" text="Edit" textFill="#728e5d" />
+                              <Text fill="#728e5d" layoutX="76.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAA">
+                                 <font>
+                                    <Font name="Georgia Bold" size="48.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#728e5d" layoutX="76.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dictionary">
+                                 <font>
+                                    <Font name="Webdings" size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TabPane>
+         </center>
+         <bottom>
+            <Label prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: #728e5d;" text="Nguyễn Phạm Minh Anh(*)&#10;Thân Hùng Cường&#10;Nguyễn Bá Hà Anh&#10;&#10;" textFill="#feffde" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Webdings" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="teamwork" fitHeight="61.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/people.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
