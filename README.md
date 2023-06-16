@@ -1,2 +1,2 @@
-# OOP_BTL-1-
-so this is my first project in my Object Oriented Programming
+# OOP_1stAssignment
+so this is my first project in my Object Oriented Programming. We made a simple dictionary
