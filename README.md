@@ -1,2 +1,2 @@
-# OOP_1stAssignment
-so this is my first project in my Object Oriented Programming. We made a simple dictionary
+# OOP_1stAssignment_ A simple dictionary
+My first project in my Object Oriented Programming. A simple dictionary
